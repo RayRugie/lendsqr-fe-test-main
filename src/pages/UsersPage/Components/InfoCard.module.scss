@@ -1,0 +1,65 @@
+@import "../../../assets/styles/functions.scss";
+@import "../../../assets/styles/colors.scss";
+
+.InfoCard {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 20px 30px 20px 30px;
+
+  max-width: 240px;
+  min-width: 200px;
+  @include tabletStyles() {
+    max-width: 180px;
+    min-width: 160px;
+    align-items: center;
+    text-align: center;
+  }
+  @include mobileStyles() {
+    width: 160px;
+    height: 160px;
+    padding: 12px 8px;
+    row-gap: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    @include mobileStyles() {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    @include mobileStyles() {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    @include tabletStyles() {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    @include mobileStyles() {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

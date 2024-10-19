@@ -1,0 +1,139 @@
+@import "../../../assets/styles/functions.scss";
+@import "../../../assets/styles/colors.scss";
+
+.GeneralDetails {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 30px;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  @include mobileStyles() {
+    padding: 24px 24px 0 24px;
+  }
+
+  .personal_info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 0 0 30px 0;
+
+    .personal_info_details {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      row-gap: 30px;
+      @include mobileStyles() {
+        grid-template-columns: 50% 50%;
+        column-gap: 20px;
+        row-gap: 30px;
+      }
+      @include tabletStyles() {
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 20px;
+        row-gap: 30px;
+      }
+    }
+  }
+
+  .Education {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px 0;
+
+    .education_details {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      row-gap: 30px;
+      column-gap: 40px;
+      @include mobileStyles() {
+        grid-template-columns: 50% 50%;
+        column-gap: 20px;
+        row-gap: 30px;
+      }
+      @include tabletStyles() {
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 20px;
+        row-gap: 30px;
+      }
+    }
+  }
+
+  .Socials {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px 0;
+
+    .social_details {
+      display: flex;
+      column-gap: 84px;
+      @include mobileStyles() {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 20px;
+        row-gap: 30px;
+      }
+      @include tabletStyles() {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 20px;
+        row-gap: 30px;
+      }
+    }
+  }
+
+  .Guarantor {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px 0;
+
+    .guarantor_details {
+      display: flex;
+      column-gap: 84px;
+      @include mobileStyles() {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 20px;
+        row-gap: 30px;
+      }
+      @include tabletStyles() {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 20px;
+        row-gap: 30px;
+      }
+    }
+  }
+
+  .showLine {
+    display: block;
+    color: rgba(33, 63, 125, 0.1);
+    opacity: 0.2;
+  }
+
+  //general styles for page
+  h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    word-break: break-all;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #545f7d;
+    word-wrap: normal;
+  }
+
+  .info_detail {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+}

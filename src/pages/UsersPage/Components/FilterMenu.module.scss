@@ -1,0 +1,150 @@
+@import "../../../assets/styles/functions.scss";
+@import "../../../assets/styles/colors.scss";
+
+.FilterMenu {
+  width: 270px;
+  padding: 30px 20px;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  background: #fbfbfb;
+  transition: all ease-in-out 1s;
+
+  .input_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+
+    label {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .organization {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .input_organization_field {
+        padding: 12px 20px;
+        width: 85%;
+        border-radius: 8px 0 0 8px;
+        opacity: 0.2;
+        border-top: 1px solid #213f7d;
+        border-left: 1px solid #213f7d;
+        border-bottom: 1px solid #213f7d;
+        border-right: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #545f7d;
+      }
+
+      .dropdown_icon_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.2;
+        border-top: 1px solid #213f7d;
+        border-right: 1px solid #213f7d;
+        border-bottom: 1px solid #213f7d;
+        border-radius: 0 8px 8px 0;
+        width: 15%;
+        height: 100%;
+        padding: 16.72px;
+      }
+    }
+
+    .input_field {
+      padding: 12px 20px;
+      width: 100%;
+      border-radius: 8px;
+      opacity: 0.2;
+      border: 1px solid #213f7d;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #545f7d;
+    }
+
+    .input_organization_field {
+      position: relative;
+    }
+
+    .dropdown_image {
+      width: 11.2px;
+      height: 6.57px;
+    }
+
+    .date_input {
+      display: flex;
+      input {
+        padding: 12px 0 12px 20px;
+        width: 194px;
+        border-radius: 8px 0 0 8px;
+        opacity: 0.2;
+        border-top: 1px solid #213f7d;
+        border-bottom: 1px solid #213f7d;
+        border-left: 1px solid #213f7d;
+        border-right: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #545f7d;
+      }
+      .calendar_icon {
+        border-radius: 0px 8px 8px 0;
+        padding: 12px 20px 12px 0;
+        border-top: 1px solid #213f7d;
+        border-bottom: 1px solid #213f7d;
+        border-right: 1px solid #213f7d;
+        opacity: 0.2;
+        border-left: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .Btns {
+    display: flex;
+    column-gap: 14px;
+
+    .resetBtn {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #545f7d;
+      border: 1px solid #545f7d;
+      border-radius: 8px;
+      padding: 12px 30px;
+      background: #ffffff;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .resetBtn:hover {
+      background: #39cdcc;
+      color: white;
+      border: 1px solid #39cdcc;
+    }
+
+    .filterBtn {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      background: #39cdcc;
+      border: 1px solid #39cdcc;
+      border-radius: 8px;
+      padding: 12px 30px;
+      cursor: pointer;
+    }
+
+    .filterBtn:hover {
+      background: #7cd9d9;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import "../../../assets/styles/functions.scss";
+@import "../../../assets/styles/colors.scss";
+
+.UserProfile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 30px 0 30px;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  row-gap: 40px;
+  @include mobileStyles() {
+    padding: 24px 24px 0 24px;
+  }
+
+  .UserProfile_container {
+    display: flex;
+    align-items: center;
+    @include mobileStyles() {
+      flex-direction: column;
+      align-items: start;
+      row-gap: 32px;
+    }
+
+    .userName_avatar {
+      display: flex;
+      align-items: center;
+
+      .avatar_icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        @include mobileStyles() {
+          width: 75px;
+          height: 75px;
+        }
+      }
+
+      .name_panel {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        padding: 0 30px 0 20px;
+
+        h2 {
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 26px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #545f7d;
+        }
+      }
+    }
+
+    .user_tier {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 75px;
+      row-gap: 10px;
+      padding: 0 30px 0 30px;
+      border-left: 1px solid #545f7d40;
+      border-right: 1px solid #545f7d40;
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #545f7d;
+      }
+
+      .stars {
+        display: flex;
+        column-gap: 6px;
+      }
+    }
+
+    .account_details {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      padding: 0 30px 0 30px;
+      @include mobileStyles() {
+        padding: 0;
+      }
+
+      h2 {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+}

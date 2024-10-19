@@ -1,0 +1,130 @@
+@import "../../assets/styles/functions.scss";
+@import "../../assets/styles/colors.scss";
+
+//old styles for landing page before I decided to edit it and remove all the elements from the landing page.
+//before you would see the welcome screen. Now it is meant to setve as just a splash screen.
+
+// .LandingPage {
+//   display: flex;
+//   width: 100vw;
+//   height: 100vh;
+//   padding: 0 10vw;
+//   justify-content: center;
+//   align-items: center;
+//   column-gap: 300px;
+//   @include mobileStyles {
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     row-gap: 32px;
+//     padding: 0 5vw;
+//     text-align: center;
+//   }
+//   @include tabletStyles {
+//     column-gap: 80px;
+//     row-gap: 32px;
+//     padding: 0 5vw;
+//   }
+
+//   section {
+//     display: flex;
+//     flex-direction: column;
+//     row-gap: 32px;
+//     h1 {
+//       font-weight: 700;
+//       font-size: 48px;
+//       line-height: 60px;
+//       color: $secondary;
+//       @include tabletStyles() {
+//         font-weight: 600;
+//         font-size: 36px;
+//         line-height: 48px;
+//       }
+//       @include mobileStyles {
+//         font-weight: 600;
+//         font-size: 28px;
+//         line-height: 36px;
+//       }
+
+//       span {
+//         color: black;
+//       }
+//     }
+
+//     p {
+//       @include mobileStyles {
+//         font-weight: 400;
+//         font-size: 14px;
+//         line-height: 18px;
+//       }
+//     }
+
+//     h6 {
+//       font-weight: 600;
+//       font-size: 14px;
+//       line-height: 18px;
+//     }
+
+//     .description {
+//       display: flex;
+//       flex-direction: column;
+//       row-gap: 10px;
+//     }
+
+//     .linkLogin {
+//       background-color: $secondary;
+//       border-radius: 16px;
+//       color: white;
+//       font-weight: 500;
+//       font-size: 18px;
+//       line-height: 25px;
+//       text-decoration: none;
+//       padding: 16px;
+//       width: 330px;
+//       text-align: center;
+//       cursor: pointer;
+//       transition: all 0.3s ease-in-out;
+//       @include tabletStyles {
+//         font-size: 14px;
+//         line-height: 18px;
+//         width: 240px;
+//         padding: 14px;
+//       }
+//       @include mobileStyles {
+//         font-size: 12px;
+//         line-height: 16px;
+//         width: 100%;
+//         padding: 10px;
+//       }
+//     }
+
+//     .linkLogin:hover {
+//       background-color: #6fb5b5;
+//     }
+//   }
+
+//   img {
+//     @include mobileStyles {
+//       width: 50vw;
+//       height: auto;
+//     }
+//   }
+// }
+
+.LandingPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  img {
+    width: 10vw;
+    height: auto;
+
+    @include mobileStyles() {
+      width: 40vw;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@function pixRem($value, $suffix: rem) {
+  $calculate: calc($value/16);
+  @return #{$calculate}#{$suffix};
+}
+
+// On screens that are 720px or less,
+@mixin mobileStyles() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+//on screens between 1200px and 720px
+@mixin tabletStyles() {
+  @media (max-width: 1288px) and (min-width: 768px) {
+    @content;
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../../assets/styles/functions.scss";
+@import "../../../assets/styles/colors.scss";
+
+.TableHeader {
+  display: grid;
+  grid-template-columns: 15% 14.2% 19% 14.48% 19.7% 17.28%;
+  grid-gap: 12px;
+  width: 95%;
+  padding: 0 35px 0 0;
+  margin: 0 35px 0 0;
+  cursor: pointer;
+  position: relative;
+
+  @include tabletStyles() {
+    grid-template-columns: 18.78% 18.7% 16.6% 24.7% 21.22%;
+    grid-gap: 14px;
+  }
+  @include mobileStyles() {
+    grid-template-columns: 60% 40%;
+    grid-gap: 12px;
+  }
+
+  .emailHeader {
+    @include tabletStyles() {
+      display: none;
+    }
+  }
+
+  .organizationHeader,
+  .emailHeader,
+  .phoneNumberHeader,
+  .dateJoinedHeader {
+    @include mobileStyles() {
+      display: none;
+    }
+  }
+}
+
+.FilterOpen {
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+
+.FilterClosed {
+  display: none;
+}

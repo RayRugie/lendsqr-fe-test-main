@@ -1,0 +1,127 @@
+@import "../../../assets/styles/functions.scss";
+@import "../../../assets/styles/colors.scss";
+
+.showLine {
+  display: block;
+  color: rgba(33, 63, 125, 0.1);
+  opacity: 0.2;
+}
+
+.hideLine {
+  display: none;
+}
+
+.SingleTableData {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .userdetails {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 15% 14.2% 19% 14.48% 19.7% 17.28%;
+    grid-gap: 12px;
+    padding: 16px 35px 16px 0px;
+    margin: 0 0 0;
+    justify-items: start;
+    align-items: center;
+
+    @include tabletStyles() {
+      grid-template-columns: 18.78% 18.7% 16.6% 24.7% 21.22%;
+      grid-gap: 14px;
+    }
+    @include mobileStyles() {
+      grid-template-columns: 60% 40%;
+      grid-gap: 12px;
+    }
+
+    p,
+    button {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .email {
+      @include tabletStyles() {
+        display: none;
+      }
+    }
+
+    .email,
+    .createdAt,
+    .phoneNumber,
+    .orgName {
+      @include mobileStyles() {
+        display: none;
+      }
+    }
+
+    .showPending,
+    .showBlacklisted,
+    .showActive,
+    .showInactive {
+      padding: 7px 16px;
+      border-radius: 100px;
+      border: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    .showPending {
+      background: #e9b20015;
+      color: #e9b200;
+    }
+
+    .showBlacklisted {
+      background: #e4033b15;
+      color: #e4033b;
+    }
+
+    .showActive {
+      background: #39cd6215;
+      color: #39cd62;
+    }
+
+    .showInactive {
+      background: #545f7d15;
+      color: #545f7d;
+    }
+  }
+
+  .options_icon {
+    width: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    cursor: pointer;
+    position: relative;
+
+    img {
+      width: auto;
+      height: 50%;
+    }
+  }
+}
+
+.MenuOpen {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all ease 1s;
+  position: absolute;
+  right: 40px;
+  z-index: 10;
+}
+
+.MenuClosed {
+  display: none;
+  opacity: 0;
+  transform: translateY(-25px);
+  transition: all ease 1s;
+}

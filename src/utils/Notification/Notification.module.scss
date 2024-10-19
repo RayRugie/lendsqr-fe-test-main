@@ -1,0 +1,61 @@
+@import "./utils_styles/functions.scss";
+
+.Notification {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 120px;
+  padding: 16px 32px;
+  background: white;
+  box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  row-gap: 12px;
+  position: absolute;
+  top: 15vh;
+  right: -20vw;
+  opacity: 0;
+  // @include mobileStyles {
+  // }
+  // @include tabletStyles {
+  // }
+
+  animation-name: riseUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+
+  .Notification_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    h5 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: black;
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    color: black;
+  }
+}
+
+@keyframes riseUp {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-22vw);
+    opacity: 1;
+  }
+}

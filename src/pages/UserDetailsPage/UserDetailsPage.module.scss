@@ -1,0 +1,85 @@
+@import "../../assets/styles/functions.scss";
+@import "../../assets/styles/colors.scss";
+
+.UserDetailsPage {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding: 30px 60px;
+  width: 100%;
+  @include mobileStyles() {
+    padding: 12px 4vw;
+    row-gap: 24px;
+  }
+
+  .backLink {
+    display: flex;
+    column-gap: 14px;
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  .pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mobileStyles() {
+      flex-direction: column;
+      align-items: start;
+      row-gap: 24px;
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .userButtons {
+      display: flex;
+      column-gap: 20px;
+
+      button {
+        padding: 12px 16px;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        background-color: none;
+        cursor: pointer;
+        background: white;
+        transition: all ease 0.3s;
+      }
+
+      .blacklist_btn {
+        color: #e4033b;
+        border: 1px solid #e4033b;
+      }
+
+      .activate_btn {
+        border: 1px solid #39cdcc;
+        color: #39cdcc;
+      }
+
+      .blacklist_btn:hover {
+        color: white;
+        background: #e4033b;
+      }
+
+      .activate_btn:hover {
+        color: white;
+        background: #39cdcc;
+      }
+    }
+  }
+
+  .LoaderBody {
+    width: 100%;
+    height: 240px;
+  }
+}
