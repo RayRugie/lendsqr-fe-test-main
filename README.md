@@ -4,7 +4,7 @@ This is a mini application created for the Lendsqr-Frontend test interview. The 
 
 ## HOW TO TEST
 
-Step 1: Visit the live site @ https://esedere-oghenetega-lendsqr-fe-test.netlify.app/ and navigate to the login page by clicking on the button on screen.
+Step 1: Visit the live site @ https://omorugie-oyibotha-lendsqr-fe-test.vercel.app/ and navigate to the login page by clicking on the button on screen.
 
 Step 2: I created the landing page as the original test design did not have one and that made the whole application look pretty unappealing. Once you land on this page, you can login using the details provided below. Note: These are mock login details provided for the recruiter to test this implementation.
 I have implemented the login functionality and created a mock login detail for the recruiter.
